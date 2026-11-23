@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import { Sidebar } from "@/src/components/shared/Sidebar";
+import { theme } from "@/src/theme/theme";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import DashboardLayout from "@/src/components/shared/DashboardLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +30,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-deeptranslate-injected="true"
     >
       <body>
-        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <DashboardLayout>{children}</DashboardLayout>
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
