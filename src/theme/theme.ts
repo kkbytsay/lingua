@@ -13,12 +13,14 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "var(--font-inter), sans-serif",
+    fontFamily: ["Inter", "sans-serif"].join(","),
+    fontSize: 12.5,
     fontWeightRegular: 400,
     body1: {
-      fontSize: "10px",
-      lineHeight: "14px", // или 1.4
+      fontFamily: ["Inter", "sans-serif"].join(","),
       fontWeight: 400,
+      fontSize: "12.5px",
+      lineHeight: "18px",
       letterSpacing: 0,
       color: "#64748B",
     },
@@ -27,10 +29,10 @@ export const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          fontFamily: "var(--font-inter), sans-serif",
-          fontSize: "10px",
-          lineHeight: "14px",
+          fontFamily: ["Inter", "sans-serif"].join(","),
           fontWeight: 400,
+          fontSize: "12.5px",
+          lineHeight: "18px",
           letterSpacing: 0,
           color: "#64748B",
         },
@@ -61,7 +63,7 @@ export const theme = createTheme({
             color: "#64748B",
             fill: "#64748B",
           },
-          "&:hover": {
+          "&:hover,&.active": {
             backgroundColor: "#EEF2FF",
             "& svg": {
               color: "#4F46E5",

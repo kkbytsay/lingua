@@ -6,6 +6,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface IProps {
   icon: React.ReactNode;
@@ -14,9 +15,15 @@ interface IProps {
 }
 
 function NavigationLink(props: IProps) {
+  const pathname = usePathname();
+
   return (
     <ListItem disablePadding>
-      <ListItemButton LinkComponent={Link} href={props.link}>
+      <ListItemButton
+        LinkComponent={Link}
+        href={props.link}
+        className={pathname === props.link ? "active" : ""}
+      >
         <ListItemIcon
           sx={{
             "&:hover": {

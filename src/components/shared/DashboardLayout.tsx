@@ -27,11 +27,8 @@ export default function DashboardLayout({
             flexShrink: 0,
             borderBottom: "1px solid #E2E8F0",
           }}
-        >
-          {/* Сюда вставится поиск и профиль */}
-        </Box>
+        ></Box>
 
-        {/* 5. Нижний блок — Основной контент страницы */}
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           {children}
         </Box>

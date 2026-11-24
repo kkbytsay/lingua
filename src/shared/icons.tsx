@@ -1,16 +1,26 @@
-import { SVGProps } from "react";
-
-type IconProps = SVGProps<SVGSVGElement>;
-
 export const ICONS = {
-  home: (props: IconProps) => (
+  logo: () => (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="40" height="40" rx="12" fill="#4F46E5" />
+      <path
+        d="M28.8 9H11.2C9.99 9 9 9.99 9 11.2V31L13.4 26.6H28.8C30.01 26.6 31 25.61 31 24.4V11.2C31 9.99 30.01 9 28.8 9Z"
+        fill="#FFFFFF"
+      />
+    </svg>
+  ),
+  home: () => (
     <svg
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={props.className}
     >
       <g>
         <path
@@ -20,14 +30,13 @@ export const ICONS = {
       </g>
     </svg>
   ),
-  schedule: (props: IconProps) => (
+  schedule: () => (
     <svg
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={props.className}
     >
       <g>
         <path
@@ -37,14 +46,13 @@ export const ICONS = {
       </g>
     </svg>
   ),
-  lessonsLibrary: (props: IconProps) => (
+  lessonsLibrary: () => (
     <svg
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={props.className}
     >
       <g>
         <path
@@ -54,14 +62,13 @@ export const ICONS = {
       </g>
     </svg>
   ),
-  rewardShop: (props: IconProps) => (
+  rewardShop: () => (
     <svg
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={props.className}
     >
       <g>
         <path
@@ -71,14 +78,13 @@ export const ICONS = {
       </g>
     </svg>
   ),
-  achievement: (props: IconProps) => (
+  achievement: () => (
     <svg
       width="20"
       height="20"
       viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={props.className}
     >
       <g>
         <path
