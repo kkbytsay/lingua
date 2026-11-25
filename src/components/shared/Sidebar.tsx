@@ -89,10 +89,9 @@ export const Sidebar = () => {
       </Box>
 
       <TeacherCard
-        sx={{}}
         name="Анна Петровна"
         position="CEO of Planet"
-        chipType="topRated"
+        chip="topRated"
       />
     </Drawer>
   );

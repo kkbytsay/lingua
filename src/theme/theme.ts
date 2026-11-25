@@ -24,6 +24,12 @@ export const theme = createTheme({
       letterSpacing: 0,
       color: "#64748B",
     },
+    h6: {
+      fontSize: "12.5px",
+      fontWeight: 600,
+      lineHeight: "16px",
+      color: "#0F172A",
+    },
   },
   components: {
     MuiCssBaseline: {
