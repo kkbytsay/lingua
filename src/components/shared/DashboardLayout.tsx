@@ -12,7 +12,7 @@ export default function DashboardLayout({
       <Box
         component="aside"
         sx={{
-          width: 240,
+          width: 260,
           flexShrink: 0,
           borderRight: "1px solid #E2E8F0",
         }}
